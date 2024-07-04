@@ -32,7 +32,6 @@ function clock() {
 
     let d = time.getDay();
     days.forEach( (e, i,array) => {
-        console.log(days[d])
         day.innerHTML = days[d];
     });
 
@@ -42,7 +41,6 @@ function clock() {
 
     let mt = time.getMonth();
     months.forEach( (e, i,array) => {
-        console.log(months[mt])
         month.innerHTML = months[mt];
     });
 

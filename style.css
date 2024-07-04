@@ -17,7 +17,7 @@ body, .main, .time, .left-side,.right-side, .right-top,
 }
 body{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./lake.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,6 +103,7 @@ body{
     font-size: 1.8em;
     font-weight: 500;
 }
+
 #day{
     color: #fd05f5;
     background: -webkit-linear-gradient(-90deg, rgb(255, 2, 213), rgb(255, 255, 255));
@@ -160,15 +161,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
 @keyframes glowing {
     0%{
         background-position: 0% 50%;
@@ -178,6 +170,19 @@ body{
     }
     100%{
         background-position: 0% 50%;
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./lake.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .clock{
+        width: 300px;
+        padding: 10px 20px;
+        border-radius: 20px;
     }
 }
 
