@@ -82,7 +82,7 @@ body{
 .clock::before{
     content: '';
     position: absolute;
-    background: linear-gradient(45deg, rgb(245, 242, 244), rgb(228, 3, 213), rgb(255, 0, 0));
+    background: linear-gradient(45deg, rgb(245, 242, 244), rgb(228, 3, 213), yellow);
     background-size: 200% 200%;
     top: -5px;
     left: -5px;
