@@ -14,6 +14,7 @@ const months = ['JAN','FEB','MARCH','APRIL','MAY','JUNE','JULY','AUG','JAN','SEP
 function clock() {
     const time = new Date();
 
+    //get hour
     let h = time.getHours();
 
     if (h >= 12) {
@@ -24,26 +25,31 @@ function clock() {
         period.innerHTML = 'AM';
     }
 
+    //get Minute
     let m = time.getMinutes();
     minutes.innerHTML = m;
 
+    //get Second
     let s = time.getSeconds()
     seconds.innerHTML = s;
 
+    //get Day
     let d = time.getDay();
     days.forEach( (e, i,array) => {
         day.innerHTML = days[d];
     });
 
+    //get Date
     let dt = time.getDate();
     date.innerHTML = dt;
 
-
+    //get Month
     let mt = time.getMonth();
     months.forEach( (e, i,array) => {
         month.innerHTML = months[mt];
     });
 
+    //get Year
     let y = time.getFullYear();
     year.innerHTML = y;
     
